@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antilisead;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: #F9F4FB;
+    font-family: 'Mulish', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+}
+
+header .astronauta img {
+    width: 100%;
+    margin-bottom: 1.7rem;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+h1 {
+    color: #B52184;
+    font-size: 3.2rem;
+    line-height: 4rem
+}
+
+p {
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #312D64;
+}
+
+.titulo img {
+    margin-top: 3.5rem;
+}
+
+.informacoes {
+    margin-top: 9.3rem;
+    background-color: #312D64;
+    padding: 5.3rem 3.9rem 5.3rem 3.9rem;
+}
+
+.informacoes .card {
+    display: flex;
+    padding: 2.6rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.3rem;
+    align-self: stretch;
+
+    border-radius: 1.9rem;
+    background: #FFF;
+
+    box-shadow: 0px 3.311px 13.243px 0px rgba(0, 0, 0, 0.25);
+}
+
+.informacoes .card p {
+    color: #312D64;
+
+    leading-trim: both;
+    
+    text-edge: cap;
+    font-family: Mulish;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    padding-right: 6rem;
+}
+
+.informacoes .card:not(:nth-last-child(-n + 1)) {
+    margin-bottom: 2.6rem;
+}
+
+.informacoes h2 {
+    color: #B52184;
+    font-size: 2.9rem;
+}
+
+button,
+input,
+fieldset,
+textarea {
+  border: none;
+  background: none;
+  font-family: var(--base-font);
+}
+
+.contato {
+    width: 100%;
+    height: 100%;
+    padding: 7.8rem 3.9rem 6.5rem;
+  }
+  
+  .contato .estrelas {
+    display: none;
+  }
+
+  .contato form h2 {
+    margin-bottom: 4.3rem;
+  }
+  
+  .contato form .input-wrapper {
+    margin-bottom: 2.4rem;
+  }
+  
+  .contato form input,
+  .contato form textarea {
+    width: 100%;
+    border: 0.15rem solid #312D64;
+    border-radius: 1.6rem;
+    padding: 1.2rem 1.6rem 1.6rem;
+    color: #312D64;
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+  
+  .contato form textarea {
+    height: 12.6rem;
+  }
+  
+  .contato form input::placeholder,
+  .contato form textarea::placeholder {
+    color: var(--text-base-color);
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+  
+  .contato form input::placeholder {
+    padding-left: 2.8rem;
+  }
+  
+  .contato form button {
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    padding: 1rem 1.6rem;
+    border-radius: 1.6rem;
+    cursor: pointer;
+    transition: filter 200ms;
+  }
+  
+  .contato form button:hover {
+    filter: brightness(0.9);
+  }
+
+  .contato h2 {
+    color: #B52184;
+
+    font-family: Mulish;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+  
+  #name {
+    background: url(./assets/pessoa.png) no-repeat scroll 1.4rem 1.2rem;
+  }
+  
+  #email {
+    background: url(./assets/arroba.png) no-repeat scroll 1.4rem 1.2rem;
+  }
+
+
+footer {
+    display: flex;
+
+    padding: 1.6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+    
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+}
+
+footer p {
+    align-self: stretch;
+
+    color: #FFF;
+
+    text-align: center;
+    leading-trim: both;
+
+
+    font-family: Mulish;
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    padding: 1.6rem 0 1.6rem 0;
+}
+
+@media (min-width: 730px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    
+    height: 100vh;
+  }
+
+  header .titulo img {
+    margin-top: 17.9rem;
+    padding-right: 10.9rem;
+  }
+
+  .informacoes {
+    display: flex;
+    gap: 6rem;
+  }
+
+  .card {
+    height: 44.8rem;
+  }
+
+  .contato .estrelas {
+    display: block;
+  }
+
+  .contato {
+    display: flex;
+  }
+
+  .contato form {
+    width: 50%;
+  }
+  .contato {
+    gap: 9.2rem;
+  }
+
+  .contato {
+    padding-bottom: 0;
+  }
+}
